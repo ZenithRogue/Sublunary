@@ -96,6 +96,6 @@ public class MallardEntity extends Animal {
 
     static {
         VARIANT = SynchedEntityData.defineId(MallardEntity.class, EntityDataSerializers.INT);
-        FOOD_ITEMS = Ingredient.of(new ItemLike[]{Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS, Items.EMERALD});
+        FOOD_ITEMS = Ingredient.of(new ItemLike[]{Items.WHEAT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.BEETROOT_SEEDS, Items.EMERALD, Items.BREAD});
     }
 }

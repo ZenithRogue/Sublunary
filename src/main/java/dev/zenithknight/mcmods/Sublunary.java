@@ -1,5 +1,6 @@
 package dev.zenithknight.mcmods;
 
+import dev.zenithknight.mcmods.sublunary.common.SublunaryItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import dev.zenithknight.mcmods.sublunary.common.entities.mallard.MallardEntity;
@@ -28,6 +29,7 @@ public class Sublunary implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        SublunaryItems.init();
         FabricDefaultAttributeRegistry.register(MALLARD_ENTITY, MallardEntity.createAttributes());
     }
 }
